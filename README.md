@@ -1,4 +1,4 @@
-📌 GeoDataRPC - Region, Province, City Database
+📌 GeoDataRPC - Dump di Regioni, Province, Citta italiane
 
 GeoDataRPC è un progetto che fornisce dati strutturati sulle zone, regioni, province e comuni italiani. Include:
 	•	Migrazioni Laravel per la creazione delle tabelle
