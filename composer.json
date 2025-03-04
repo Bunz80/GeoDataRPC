@@ -1,33 +1,14 @@
 {
     "name": "bunz80/geodata-rpc",
-    "description": "Pacchetto Laravel per regioni, province e comuni italiani",
-    "type": "library",
+    "description": "Archivio dati per regioni, province e comuni italiani",
+    "type": "project",
     "autoload": {
         "psr-4": {
             "GeoDataRPC\\": "src/"
         }
     },
     "require": {
-        "php": ">=8.0",
-        "illuminate/database": "^10.0",
-        "illuminate/support": "^10.0"
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "GeoDataRPC\\GeoDataServiceProvider"
-            ]
-        }
-    },
-    "scripts": {
-        "post-autoload-dump": [
-            "@php artisan migrate --path=vendor/bunz80/geodata-rpc/src/Database/migrations || true",
-            "@php artisan db:seed --class=\\GeoDataRPC\\Database\\Seeders\\GeoZoneSeeder || true",
-            "@php artisan db:seed --class=\\GeoDataRPC\\Database\\Seeders\\GeoRegionSeeder || true",
-            "@php artisan db:seed --class=\\GeoDataRPC\\Database\\Seeders\\GeoProvinceSeeder || true",
-            "@php artisan db:seed --class=\\GeoDataRPC\\Database\\Seeders\\GeoCitySeeder || true",
-            "@php artisan db:seed --class=\\GeoDataRPC\\Database\\Seeders\\GeoPostalCodeSeeder || true"
-        ]
+        "php": ">=8.0"
     },
     "repositories": [
         {
