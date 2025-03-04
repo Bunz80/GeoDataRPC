@@ -21,12 +21,12 @@
     },
     "scripts": {
         "post-autoload-dump": [
-            "@php artisan migrate --path=vendor/bunz80/geodata-rpc/src/Database/migrations",
-            "@php artisan db:seed --class=\\GeoDataRPC\\Database\\Seeders\\GeoZoneSeeder",
-            "@php artisan db:seed --class=\\GeoDataRPC\\Database\\Seeders\\GeoRegionSeeder",
-            "@php artisan db:seed --class=\\GeoDataRPC\\Database\\Seeders\\GeoProvinceSeeder",
-            "@php artisan db:seed --class=\\GeoDataRPC\\Database\\Seeders\\GeoCitySeeder",
-            "@php artisan db:seed --class=\\GeoDataRPC\\Database\\Seeders\\GeoPostalCodeSeeder"
+            "@php artisan migrate --path=vendor/bunz80/geodata-rpc/src/Database/migrations || true",
+            "@php artisan db:seed --class=\\GeoDataRPC\\Database\\Seeders\\GeoZoneSeeder || true",
+            "@php artisan db:seed --class=\\GeoDataRPC\\Database\\Seeders\\GeoRegionSeeder || true",
+            "@php artisan db:seed --class=\\GeoDataRPC\\Database\\Seeders\\GeoProvinceSeeder || true",
+            "@php artisan db:seed --class=\\GeoDataRPC\\Database\\Seeders\\GeoCitySeeder || true",
+            "@php artisan db:seed --class=\\GeoDataRPC\\Database\\Seeders\\GeoPostalCodeSeeder || true"
         ]
     },
     "repositories": [
