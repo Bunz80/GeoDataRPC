@@ -1,7 +1,7 @@
 {
     "name": "bunz80/geodata-rpc",
     "description": "Archivio dati per regioni, province e comuni italiani",
-    "type": "project",
+    "type": "library",
     "autoload": {
         "psr-4": {
             "GeoDataRPC\\": "src/",
