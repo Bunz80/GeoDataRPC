@@ -4,7 +4,8 @@
     "type": "project",
     "autoload": {
         "psr-4": {
-            "GeoDataRPC\\": "src/"
+            "GeoDataRPC\\": "src/",
+            "GeoDataRPC\\Models\\": "src/app/Models/"
         }
     },
     "require": {
